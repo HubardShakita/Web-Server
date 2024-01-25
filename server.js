@@ -66,8 +66,8 @@ app.get('/posts', (req, res) => {
 });
 
 app.post('/add-post', (req, res) => {
-  const { title, author, text } = req.body;
-  const post = new Post({title, author, text});
+  const { first_team, second_team, text, match } = req.body;
+  const post = new Post({first_team, second_team, text, match});
   post
     .save()
     .then((result) => res.redirect('/posts'))

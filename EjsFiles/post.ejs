@@ -5,11 +5,14 @@
   <%- include('./partials/nav.ejs') %>
   <article>
     <div class="info">
-      <span><%= post.createdAt.toLocaleDateString() || 'No date' %></span>
-      <span><%= post.author %></span>
+      <span class="span-post left"><%= post.first_team %></span>
+      <div class="div_match-post">
+        <span class="span-post match"><%= post.match %></span>
+      </div>
+      <span class="span-post right"><%= post.second_team %></span>
     </div>
-    <h1><%= post.title %></h1>
-    <p><%= post.text %></p>
+    <p class="post-commentary"><%= post.text %></p>
+    <span><%= post.createdAt.toLocaleDateString() || 'No date' %></span>
   </article>
 </body>
 </html>

@@ -6,16 +6,16 @@
   <h1>Posts:</h1>
   <ul>
     <% if (posts.length) { %>
-      <% posts.forEach(({ id, title, createdAt, text, author }) => { %>
+      <% posts.forEach(({ id, first_team, createdAt, text, second_team, match}) => { %>
         <li>
           <article>
             <h2>
-              <a href="/posts/<%= id %>"><%= title %></a>
+              <a href="/posts/<%= id %>"><%= first_team %></a>
             </h2>
-            <p><%= text %></p>
+            <p><%= text%></p>
             <div class="info">
               <span><%= createdAt.toLocaleDateString() %></span>
-              <span><%= author %></span>
+              <span><%= second_team %></span>
             </div>
           </article>
         </li>

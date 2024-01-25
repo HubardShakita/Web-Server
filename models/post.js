@@ -7,12 +7,17 @@ const postSchema = new Schema({
         required: true,
     },
     
-    title: {
+    first_team: {
         type: String,
         required: true,
     },
 
-    author: {
+    second_team: {
+        type: String,
+        required: true,
+    },
+
+    match: {
         type: String,
         required: true,
     },

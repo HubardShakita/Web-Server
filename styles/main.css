@@ -1,10 +1,11 @@
 body {
   padding-top: 80px;
   min-height: calc(100vh - 90px);
-  font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  background: linear-gradient(to bottom, #00d2ff, #928dab);
-  color: #fff;
+  background-image: url(https://images4.alphacoders.com/127/thumb-1920-1277335.png);
+  background-position: static;
+  background-repeat: no-repeat;
+  /* color: #fff; */
 }
 
 h1 {
@@ -48,10 +49,15 @@ a {
 }
 
 article {
+  background-image: url(https://sun9-44.userapi.com/impf/NWjGJdzUw0rJPBtyx5vIX2GV1QRXfngHAaTxZg/vTPcnbsBcP4.jpg?size=1920x768&quality=95&crop=155,0,1327,530&sign=38d79dc732b44c3aa144edf639bc3e81&type=cover_group);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 10px 20px;
   border-radius: 3px;
   margin-bottom: 10px;
+  color: white;
 }
 
 .info {
@@ -125,10 +131,10 @@ textarea {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  background: linear-gradient(to bottom, #00d2ff, #928dab);
-  color: #fff;
+  background-image: url(https://wallpapercave.com/wp/wp11735742.jpg);
+  background-position: static;
+  background-repeat: no-repeat;
   padding-top: 0;
 }
 
@@ -146,4 +152,34 @@ textarea {
   text-transform: uppercase;
   font-size: 160px;
   margin-bottom: 20px;
+}
+
+
+/* тут пока все тестирутеся */
+
+.post-commentary{
+  text-align: center;
+}
+
+.span-post {
+  font-size: 50px;
+  padding-top: 40px;
+}
+
+.left {
+  padding-left: 350px;
+}
+
+.right {
+  padding-right: 350px;
+}
+
+.match{
+  color: black;
+}
+
+.div_match-post {
+  border-radius: 10px;
+  padding: 25px;
+  background-color: white;
 }

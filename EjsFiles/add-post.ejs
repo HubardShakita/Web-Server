@@ -5,15 +5,18 @@
   <%- include('./partials/nav.ejs') %>
   <form id="post-form" method="post" action="/add-post">
     <div class="form-info">
-      <label>Post Title
-        <input type="text" name="title">
+      <label>1 Team
+        <input type="text" maxlength="25" name="first_team">
       </label>
-      <label>Author
-        <input type="text" name="author">
+      <label>2 Team
+        <input type="text" maxlength="25" name="second_team">
+      </label>
+      <label>Result Match
+        <input type="text" maxlength="25" name="match">
       </label>
     </div>
     <div class="form-text">
-      <label>Post Text
+      <label>Add Commentary
         <textarea name="text"></textarea>
       </label>
     </div>
