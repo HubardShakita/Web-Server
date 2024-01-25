@@ -3,21 +3,21 @@
   <%- include('./partials/head.ejs') %>
 <body>
   <%- include('./partials/nav.ejs') %>
-  <form id="post-form" method="post" action="/add-post">
+  <form id="post-form" method="post" action="/edit/<%= post.id %>?_method=PUT">
     <div class="form-info">
       <label align="center">Первая команда
-        <input type="text" maxlength="25" name="first_team">
+        <input type="text" maxlength="25" name="first_team" value="<%= post.first_team%>">
       </label>
       <label align="center">Вторая команда
-        <input type="text" maxlength="25" name="second_team">
+        <input type="text" maxlength="25" name="second_team" value="<%= post.second_team%>">
       </label>
       <label align="center">Счет Матча
-        <input type="text" maxlength="25" name="match">
+        <input type="text" maxlength="25" name="match" value="<%= post.match%>">
       </label>
     </div>
     <div class="form-text">
       <label align="center">Комментарии к матчу
-        <textarea name="text"></textarea>
+        <textarea name="text"><%= post.text%></textarea>
       </label>
     </div>
     <div class="form-button">

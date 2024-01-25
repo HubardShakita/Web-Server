@@ -3,24 +3,46 @@
   <%- include('./partials/head.ejs') %>
 <body>
   <%- include('./partials/nav.ejs') %>
-  <h1>Posts:</h1>
+  <h1>Матчи:</h1>
   <ul>
     <% if (posts.length) { %>
-      <% posts.forEach(({ id, first_team, createdAt, text, second_team, match}) => { %>
+      <% posts.forEach(({ id, first_team, createdAt, text, second_team, match, comments}) => { %>
         <li>
           <article>
-            <h2>
-              <a href="/posts/<%= id %>"><%= first_team %></a>
-            </h2>
-            <p><%= text%></p>
+            <div class="head-posts">
+              <h2>
+                <a href="/posts/<%= id %>"><%= first_team %></a>
+              </h2>
+              <h2>
+                <a href="/posts/<%= id %>"><%= match %></a>
+              </h2>
+              <h2>
+                <a href="/posts/<%= id %>"><%= second_team %></a>
+              </h2>
+            </div>
+            <p class="posts-text"><%= text%></p>
             <div class="info">
               <span><%= createdAt.toLocaleDateString() %></span>
-              <span><%= second_team %></span>
+              <button class="btn-delete" data-id="<%= id %>">
+                <i class="fas fa-trash-alt" data-id="<%= id %>"></i>
+              </button>
             </div>
           </article>
         </li>
       <% }) %>
     <% } %>
   </ul>
+  <script>
+    document.addEventListener('click', (e) => {
+      const id = e.target?.dataset?.id || null;
+      if (id) {
+        fetch(`/posts/${id}`, {
+          method: 'DELETE',
+        }).then(() => {
+          window.location.reload();
+        });
+      }
+    });
+  </script>
 </body>
 </html>
