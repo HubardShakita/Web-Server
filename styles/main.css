@@ -1,5 +1,6 @@
 body {
   padding-top: 80px;
+<<<<<<< HEAD
   min-height: 100vh;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -8,6 +9,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
  
+=======
+  min-height: calc(100vh - 90px);
+  font-size: 20px;
+  background-image: url(https://images4.alphacoders.com/127/thumb-1920-1277335.png);
+  background-position: static;
+  background-repeat: no-repeat;
+>>>>>>> 15448d278c46239ae3071fe07e73880a183b1cc7
   /* color: #fff; */
 }
 
@@ -56,12 +64,19 @@ article {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+<<<<<<< HEAD
+=======
+  background-color: rgba(0, 0, 0, 0.4);
+>>>>>>> 15448d278c46239ae3071fe07e73880a183b1cc7
   padding: 10px 20px;
   border-radius: 3px;
   margin-bottom: 10px;
   color: white;
+<<<<<<< HEAD
   /* filter: blur(5px);
   z-index: -1; */
+=======
+>>>>>>> 15448d278c46239ae3071fe07e73880a183b1cc7
 }
 
 /* .baclground {
@@ -151,7 +166,10 @@ textarea {
   background-image: url(https://wallpapercave.com/wp/wp11735742.jpg);
   background-position: static;
   background-repeat: no-repeat;
+<<<<<<< HEAD
   background-size: cover;
+=======
+>>>>>>> 15448d278c46239ae3071fe07e73880a183b1cc7
   padding-top: 0;
 }
 
@@ -183,12 +201,15 @@ textarea {
   padding-top: 40px;
 }
 
+<<<<<<< HEAD
 .posts-text {
   text-shadow: 1.41px 1.41px black, 2px 0 black, 1.41px -1.41px black,
     0 -2px black, -1.41px -1.41px black, -2px 0 black,
    -1.41px 1.41px black, 0 2px black;
 }
 
+=======
+>>>>>>> 15448d278c46239ae3071fe07e73880a183b1cc7
 .left {
   padding-left: 350px;
 }
@@ -202,6 +223,7 @@ textarea {
 }
 
 .div_match-post {
+<<<<<<< HEAD
   text-align: center;
   border-radius: 10px;
   padding: 25px;
@@ -217,4 +239,9 @@ textarea {
 
 label {
   color: white;
+=======
+  border-radius: 10px;
+  padding: 25px;
+  background-color: white;
+>>>>>>> 15448d278c46239ae3071fe07e73880a183b1cc7
 }
